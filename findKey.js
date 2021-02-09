@@ -1,16 +1,14 @@
-const findKeyByValue = require("./findKeyByValue");
-
 const findKey = (object, callback) => {
-let result = '';
-for(const key in object) {
+  let result = '';
+  for (const key in object) {
   
-  if(callback(object[key])) {
-    result = key;
-    break; 
+    if (callback(object[key])) {
+      result = key;
+      break;
+    }
+    result = undefined;
   }
-  result = undefined;
-}
-return result;
+  return result;
 };
 
 module.exports = findKey;

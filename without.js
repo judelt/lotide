@@ -1,7 +1,7 @@
-const without = function (source, itemsToRemove) {
+const without = function(source, itemsToRemove) {
   const newArray = [];
   for (const element of source) {
-    if(!itemsToRemove.includes(element)) {
+    if (!itemsToRemove.includes(element)) {
       newArray.push(element);
     }
   }

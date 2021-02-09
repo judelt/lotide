@@ -9,7 +9,7 @@ const middle = function(array) {
      
     //even numbers numbers
     } else if (arrayLength % 2 === 0) {
-      ind = (arrayLength / 2) - 1;
+      const ind = (arrayLength / 2) - 1;
       const ind2 = (arrayLength / 2);
       newArray.push(array[ind]);
       newArray.push(array[ind2]);
